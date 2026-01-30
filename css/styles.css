@@ -45,6 +45,14 @@ nav a:hover {
 .profile {
     text-align: center;
     margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profile-text {
+    text-align: left;
 }
 
 .profile img {
@@ -174,7 +182,14 @@ header span a:hover::after, header span a:hover::before {
     .container {
         width: 95%;
     }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .profile-text {
+        text-align: center;
+    }
     .profile img {
         width: 100px;
         height: 100px;
