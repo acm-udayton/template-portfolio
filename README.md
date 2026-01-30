@@ -8,10 +8,14 @@ This repository contains a simple personal portfolio template designed for begin
 personal-portfolio
 ├── css
 │   └── styles.css
+├── img
+│   ├── img_avatar_f.png
+│   └── img_avatar_m.png
 ├── pages
 │   ├── about.html
 │   └── projects.html
 ├── index.html
+├── LICENSE
 └── README.md
 ```
 
@@ -20,13 +24,13 @@ personal-portfolio
 1. **Clone the Repository**
    To get started, clone this repository to your local machine using the following command:
    ```
-   git clone https://github.com/yourusername/personal-portfolio.git
+   git clone https://github.com/acm-udayton/template-portfolio.git
    ```
 
 2. **Open the Project**
    Navigate to the project directory:
    ```
-   cd personal-portfolio
+   cd template-portfolio
    ```
 
 3. **Edit the Files**
@@ -39,7 +43,7 @@ personal-portfolio
    - Open `css/styles.css` to change the styles of your website. This file contains all the CSS rules, and you can easily modify colors, fonts, and layout.
 
 5. **Preview Your Website**
-   Open `index.html` in your web browser to see your changes in action.
+   Open `index.html` in your web browser to see your changes in action. We recommend you use the Visual Studio Code extension LiveServer to view your changes without needing to reload the page.
 
 ## Deploying with GitHub Pages
 
