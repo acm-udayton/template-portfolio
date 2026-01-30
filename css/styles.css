@@ -1,3 +1,9 @@
+:root{
+--accent-color-text: #fff;
+--accent-color-bg: #333;
+--color-tagline: #666;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,8 +23,8 @@ main {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: var(--accent-color-bg);
+    color: var(--accent-color-text);
     padding: 10px 0;
     text-align: center;
 }
@@ -33,7 +39,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: var(--accent-color-text);
     text-decoration: none;
     margin: 0 15px;
 }
@@ -63,7 +69,7 @@ nav a:hover {
 
 .tagline {
     font-style: italic;
-    color: #666;
+    color: var(--color-tagline);
 }
 
 .container {
@@ -73,8 +79,8 @@ nav a:hover {
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--accent-color-bg);
+    color: var(--accent-color-text);
     text-align: center;
     padding: 10px 0;
     position: relative;
@@ -83,7 +89,7 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: var(--accent-color-text);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -117,11 +123,19 @@ a.unstyled-link {
     color: inherit;
 }
 
-hr.footer-divider, hr.projects-divider {
+hr {
     border: 0;
     height: 1px;
-    background: #555;
     width: 20%;
+}
+
+hr.footer-divider {
+    background: var(--accent-color-text);
+
+}
+hr.projects-divider {
+    background: var(--accent-color-bg);
+
 }
 
 .projects-github {
@@ -138,9 +152,9 @@ hr.footer-divider, hr.projects-divider {
     line-height: 1.5;
 }
 
-button.github-profile-button {
-    background-color: #333;
-    color: #ffffff;
+button {
+    background-color: var(--accent-color-bg);
+    color: var(--accent-color-text);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -150,7 +164,7 @@ button.github-profile-button {
 
 /* Hover underline effect for navigation links */
 header span a {
-    color: #ffffff;
+    color: var(--accent-color-text);
     position: relative;
     display: inline-block;
 }
@@ -159,7 +173,7 @@ header span a::after, header span a::before {
     position: absolute;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, #333, #ffffff);
+    background: linear-gradient(to right, var(--accent-color-bg), var(--accent-color-text));
     bottom: -5px;
     left: 0;
     transform: scaleX(0);
