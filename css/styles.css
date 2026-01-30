@@ -192,6 +192,11 @@ header span a:hover::after, header span a:hover::before {
     transform: scaleX(1);
 }
 
+main section.about-me, main section.work-history, main section.education, main section.skills {
+    width: 70%;
+    margin: 20px auto;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 95%;
