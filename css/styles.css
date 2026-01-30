@@ -86,13 +86,17 @@ footer a:hover {
 section.projects {
     width: 90% !important;
     margin: 40px auto !important;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+
 }
 
 .project {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
-    margin: 10px 0;
+    margin: 0;
 }
 
 .project h3 {
@@ -144,4 +148,8 @@ button.github-profile-button {
         width: 100px;
         height: 100px;
     }
+    section.projects {
+        grid-template-columns: 1fr;
+    }
+
 }
