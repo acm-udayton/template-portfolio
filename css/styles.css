@@ -13,6 +13,7 @@ main {
     flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
+    align-items: center;
 }
 
 header {
@@ -82,6 +83,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+section.projects {
+    width: 90% !important;
+    margin: 40px auto !important;
+}
+
 .project {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -98,11 +104,35 @@ a.unstyled-link {
     color: inherit;
 }
 
-hr.footer-divider {
+hr.footer-divider, hr.projects-divider {
     border: 0;
     height: 1px;
     background: #555;
     width: 20%;
+}
+
+.projects-github {
+    text-align: center;
+    margin: 40px 0;
+}
+.projects-github h2 {
+    margin-top: 0px;
+}
+.projects-github p {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+button.github-profile-button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 @media (max-width: 600px) {
