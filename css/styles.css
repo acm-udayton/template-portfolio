@@ -93,6 +93,18 @@ footer a:hover {
     margin: 0;
 }
 
+a.unstyled-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+hr.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #555;
+    width: 20%;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 95%;
