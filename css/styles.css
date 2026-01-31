@@ -37,6 +37,10 @@ nav {
     margin: 20px 0;
     font-size: 2rem;
 }
+nav, footer .social-icons {
+    user-select: none;
+    cursor: default;
+}
 
 nav a {
     color: var(--accent-color-text);
@@ -92,6 +96,7 @@ footer a {
     color: var(--accent-color-text);
     text-decoration: none;
     margin: 0 10px;
+    user-select: all;
 }
 
 footer a:hover {
