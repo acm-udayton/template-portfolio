@@ -108,12 +108,31 @@ section.projects {
 }
 
 .project {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
     margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    color: #333;
+}
+
+.project p {
+    color: #444;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
 .project h3 {
     margin: 0;
 }
@@ -217,4 +236,71 @@ main section.about-me, main section.work-history, main section.education, main s
         grid-template-columns: 1fr;
     }
 
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    margin-bottom: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #333;
+    display: inline-block;
+}
+
+.card-date {
+    font-size: 1em;
+    color: #666;
+    margin: 0 0 4px 0;
+    float: right;
+}
+
+.card-company {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+    clear: both;
+}
+
+.card-description {
+    color: #444;
+    line-height: 1.6;
+}
+
+.card-description p {
+    margin: 0 0 10px 0;
+}
+
+.card-description ul,
+.card-description ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .card-date {
+        float: none;
+        display: block;
+    }
+    
+    .card-title {
+        display: block;
+    }
 }
