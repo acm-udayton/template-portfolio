@@ -28,6 +28,30 @@ main {
     overflow: hidden;
 }
 
+/* Skill Item (badge-like) */
+.skill-item {
+    background-color: white;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+}
+.skill-item:hover {
+    background-color: var(--accent-color-bg);
+    color: white;
+    border-color: var(--accent-color-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skill-item i {
+    font-size: 1.1em;
+}
+
 
 /* Header Styles */
 header {
