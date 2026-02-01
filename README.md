@@ -8,6 +8,7 @@ This repository contains a simple personal portfolio template designed for begin
 personal-portfolio
 ├── css
 │   ├── about.css
+│   ├── index.css
 │   ├── projects.css
 │   └── styles.css
 ├── img
