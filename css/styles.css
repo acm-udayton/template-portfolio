@@ -4,6 +4,7 @@
 --color-tagline: #666;
 }
 
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,18 +22,25 @@ main {
     flex-direction: column !important;
     align-items: center;
 }
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 
+
+/* Header Styles */
 header {
     background: var(--accent-color-bg);
     color: var(--accent-color-text);
     padding: 10px 0;
     text-align: center;
 }
-
 header h1 {
     margin: 0;
 }
 
+/* Navigation Styles */
 nav {
     margin: 20px 0;
     font-size: 2rem;
@@ -41,17 +49,16 @@ nav, footer .social-icons {
     user-select: none;
     cursor: default;
 }
-
 nav a {
     color: var(--accent-color-text);
     text-decoration: none;
     margin: 0 15px;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
 
+/* Profile Styles */
 .profile {
     text-align: center;
     margin: 20px 0;
@@ -60,28 +67,20 @@ nav a:hover {
     justify-content: center;
     gap: 30px;
 }
-
 .profile-text {
     text-align: left;
 }
-
 .profile img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
-
 .tagline {
     font-style: italic;
     color: var(--color-tagline);
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
+/* Footer Styles */
 footer {
     background: var(--accent-color-bg);
     color: var(--accent-color-text);
@@ -91,55 +90,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
 footer a {
     color: var(--accent-color-text);
     text-decoration: none;
     margin: 0 10px;
     user-select: all;
 }
-
 footer a:hover {
     text-decoration: underline;
-}
-
-section.projects {
-    width: 90% !important;
-    margin: 40px auto !important;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
-
-}
-
-.project {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.project:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.project h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0 0 15px 0;
-    color: #333;
-}
-
-.project p {
-    color: #444;
-    line-height: 1.6;
-    margin: 0 0 15px 0;
-}
-.project h3 {
-    margin: 0;
 }
 
 a.unstyled-link {
@@ -147,35 +105,17 @@ a.unstyled-link {
     color: inherit;
 }
 
+/* Divider Styles */
 hr {
     border: 0;
     height: 1px;
     width: 20%;
 }
-
 hr.footer-divider {
     background: var(--accent-color-text);
-
-}
-hr.projects-divider {
-    background: var(--accent-color-bg);
-
 }
 
-.projects-github {
-    text-align: center;
-    margin: 40px 0;
-}
-.projects-github h2 {
-    margin-top: 0px;
-}
-.projects-github p {
-    width: 60%;
-    margin: 20px auto;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
+/* Button Styles */
 button {
     background-color: var(--accent-color-bg);
     color: var(--accent-color-text);
@@ -186,7 +126,7 @@ button {
     font-size: 16px;
 }
 
-/* Hover underline effect for navigation links */
+/* Header Styles */
 header span a {
     color: var(--accent-color-text);
     position: relative;
@@ -204,7 +144,6 @@ header span a::after, header span a::before {
     transform-origin: right;
     transition: transform 0.4s ease-out;
 }
-
 header span a::before {
     top: -5px;
     transform-origin: left;
@@ -216,20 +155,17 @@ header span a:hover::after, header span a:hover::before {
     transform: scaleX(1);
 }
 
-main section.about-me, main section.work-history, main section.education, main section.skills {
-    width: 70%;
-    margin: 20px auto;
-}
 
 @media (max-width: 600px) {
+    /* Global Styles */
     .container {
         width: 95%;
     }
+    /* Profile Styles */
     .profile {
         flex-direction: column;
         text-align: center;
     }
-
     .profile-text {
         text-align: center;
     }
@@ -237,138 +173,4 @@ main section.about-me, main section.work-history, main section.education, main s
         width: 100px;
         height: 100px;
     }
-    section.projects {
-        grid-template-columns: 1fr;
-    }
-
-}
-
-.card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.card-header {
-    margin-bottom: 15px;
-}
-
-.card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 0 0 8px 0;
-    color: #333;
-    display: inline-block;
-}
-
-.card-date {
-    font-size: 1em;
-    color: #666;
-    margin: 0 0 4px 0;
-    float: right;
-}
-
-.card-company {
-    font-size: 1em;
-    color: #555;
-    margin: 0;
-    font-weight: 500;
-    clear: both;
-}
-
-.card-description {
-    color: #444;
-    line-height: 1.6;
-}
-
-.card-description p {
-    margin: 0 0 10px 0;
-}
-
-.card-description ul,
-.card-description ol {
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-@media (max-width: 600px) {
-    .card-date {
-        float: none;
-        display: block;
-    }
-    
-    .card-title {
-        display: block;
-    }
-}
-
-.skill-category {
-    margin-bottom: 15px;
-}
-
-.skill-category-header {
-    background-color: var(--accent-color-bg);
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1em;
-    font-weight: 500;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.skill-category-header:hover {
-    background-color: var(--accent-color-bg);
-}
-
-.skill-category-header i {
-    font-size: 1em;
-}
-
-.skill-list {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-top: none;
-    border-radius: 0 0 8px 8px;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill-item {
-    background-color: white;
-    color: #333;
-    padding: 8px 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.95em;
-    transition: all 0.3s ease;
-}
-
-.skill-item:hover {
-    background-color: var(--accent-color-bg);
-    color: white;
-    border-color: var(--accent-color-bg);
-    transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.skill-item i {
-    font-size: 1.1em;
 }

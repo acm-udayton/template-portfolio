@@ -7,6 +7,8 @@ This repository contains a simple personal portfolio template designed for begin
 ```
 personal-portfolio
 ├── css
+│   ├── about.css
+│   ├── projects.css
 │   └── styles.css
 ├── img
 │   ├── img_avatar_f.png
