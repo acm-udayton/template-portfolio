@@ -45,6 +45,9 @@ personal-portfolio
 4. **Customize the Styles**
    - Open `css/styles.css` to change the styles of your website. This file contains all the CSS rules, and you can easily modify colors, fonts, and layout.
 
+5. **Choose the Icons**
+   - In any file, replace the ```<i class="fa- ... </i>``` code with the code for a different FontAwesome icon. You can use their [icon search](https://fontawesome.com/search) page to look for icons to suit your design and website!
+
 5. **Preview Your Website**
    Open `index.html` in your web browser to see your changes in action. We recommend you use the Visual Studio Code extension LiveServer to view your changes without needing to reload the page.
 
